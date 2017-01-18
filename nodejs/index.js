@@ -27,21 +27,21 @@ app.post('/messages', function(req, res) {
 
   const appUserId = req.body.appUser._id;
   // Call REST API to send message https://docs.smooch.io/rest/#post-message
-  if (req.body.trigger === 'message:appUser') {
-      smooch.appUsers.sendMessage(appUserId, {
-          type: 'text',
-          text: 'Live long and prosper',
-          role: 'appMaker'
-      })
-          .then((response) => {
-              console.log('API RESPONSE:\n', response);
-              res.end();
-          })
-          .catch((err) => {
-              console.log('API ERROR:\n', err);
-              res.end();
-          });
-  }
+  // if (req.body.trigger === 'message:appUser') {
+  //     smooch.appUsers.sendMessage(appUserId, {
+  //         type: 'text',
+  //         text: 'Live long and prosper',
+  //         role: 'appMaker'
+  //     })
+  //         .then((response) => {
+  //             console.log('API RESPONSE:\n', response);
+  //             res.end();
+  //         })
+  //         .catch((err) => {
+  //             console.log('API ERROR:\n', err);
+  //             res.end();
+  //         });
+  // }
 });
 
 // Listen on port
