@@ -1,0 +1,5 @@
+To do: create webhooks on Shoes Me
+Config:
+- Server is running on 8001
+- Website is running on 8000
+- Shoes Me App Token: eeln2537r3mwnfqtvi7e63rex
