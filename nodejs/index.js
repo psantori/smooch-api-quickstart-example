@@ -31,7 +31,8 @@ app.post('/messages', function(req, res) {
       smooch.appUsers.sendMessage(appUserId, {
           type: 'image',
           text: 'Live long and prosper',
-          medialUrl:'https://c1.staticflickr.com/6/5519/30725254545_62fc46416d_k.jpg'
+          //mediaUrl:'https://c1.staticflickr.com/6/5519/30725254545_62fc46416d_k.jpg',
+          mediaUrl:'http://data.freehdw.com/toyota-devolro-back-view.jpg',
           role: 'appMaker'
       })
           .then((response) => {
